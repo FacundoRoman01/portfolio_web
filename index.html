@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Facundo Román</title>
+  <meta name="description" content="Portfolio profesional de Facundo Román - Desarrollador Java Junior.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uW/jW0Lh/bL8jFm2/F8L+gD4R+X+u3L6Gz2R5t+pQ0R9kP+A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a href="#hero" class="logo">FR</a>
+      <ul class="nav__links">
+        <li><a href="#about" class="nav__link">Sobre mí</a></li>
+        <li><a href="#skills" class="nav__link">Habilidades</a></li>
+        <li><a href="#projects" class="nav__link">Proyectos</a></li>
+        <li><a href="#contact" class="nav__link">Contacto</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+        <span class="theme-toggle__icon icon--light">🌙</span>
+        <span class="theme-toggle__icon icon--dark">☀️</span>
+      </button>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <div class="hero-info">
+        <h1 class="hero__title">¡Hola! Soy Facundo 👋</h1>
+        <p class="hero__subtitle">Desarrollador Java Junior</p>
+        <p class="hero__description">
+          Apasionado por crear soluciones eficientes y escalables.
+          Me especializo en el desarrollo de aplicaciones backend y
+          busco oportunidades para seguir creciendo.
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Contactar</a>
+          <a href="./path/facundoRoman_sistemas_CV.pdf" class="btn btn--secondary" download>
+            Descargar CV
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="/img/facu_1.jpg" alt="Foto de Facundo" class="profile-pic" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container about-content">
+      <h2 class="section__title">Sobre Mí</h2>
+      <p class="about__text">
+        Soy estudiante de Analista de Sistemas. Me destaco por ser proactivo, resolutivo y trabajar bien en equipo.
+        Apasionado por el desarrollo backend con Java y Spring Boot. Mi objetivo es aplicar mis conocimientos
+        para contribuir en proyectos desafiantes y continuar mi aprendizaje en el mundo del desarrollo de software.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+  <div class="container">
+    <h2 class="section__title">Habilidades y Tecnologías</h2>
+    <p class="section__subtitle">
+      Conocimientos en desarrollo de software, desde el backend hasta las herramientas de colaboración.
+    </p>
+    <div class="skills__grid">
+      <div class="skill-card">
+        <i class="fa-solid fa-server skill-icon"></i>
+        <h3 class="skill-card__title">Backend</h3>
+        <ul class="skill-card__list">
+          <li>Java</li>
+          <li>Spring Framework (Spring Boot, MVC, Data JPA, Security)</li>
+          <li>Hibernate / JPA</li>
+          <li>RESTful APIs</li>
+          <li>JUnit</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-code skill-icon"></i>
+        <h3 class="skill-card__title">Frontend</h3>
+        <ul class="skill-card__list">
+          <li>HTML, CSS, JavaScript</li>
+          <li>React JS</li>
+        </ul>
+      </div>
+      
+      <div class="skill-card">
+        <i class="fa-solid fa-database skill-icon"></i>
+        <h3 class="skill-card__title">Bases de Datos</h3>
+        <ul class="skill-card__list">
+          <li>SQL</li>
+          <li>MySQL, SQL Server</li>
+          <li>Diseño de Esquemas</li>
+        </ul>
+      </div>
+      
+      <div class="skill-card">
+        <i class="fa-solid fa-gear skill-icon"></i>
+        <h3 class="skill-card__title">Herramientas y DevOps</h3>
+        <ul class="skill-card__list">
+          <li>Git, GitHub</li>
+          <li>Maven, Gradle</li>
+          <li>IntelliJ IDEA, VS Code</li>
+          <li>Postman, Docker</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-clipboard-list skill-icon"></i>
+        <h3 class="skill-card__title">Metodologías y QA</h3>
+        <ul class="skill-card__list">
+          <li>Agile (Scrum, Kanban)</li>
+          <li>QA Manual</li>
+          <li>Casos de prueba, Pruebas funcionales y unitarias</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section__title">Mis Proyectos</h2>
+      <p class="section__subtitle">
+        Una colección de mis trabajos más recientes.
+      </p>
+      <div class="projects__grid">
+        <article class="project-card">
+          <img src="img/project_1.png" alt="Captura de Contactonube" class="project-card__image">
+          <div class="project-card__content">
+            <h3 class="project-card__title">Contactonube</h3>
+            <p class="project-card__description">
+              Descripción breve del proyecto y las tecnologías utilizadas.
+              Aquí puedes mencionar si es una API REST, una aplicación de consola, etc.
+            </p>
+            <div class="project-card__links">
+              <a href="#" target="_blank" class="btn btn--secondary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+              </a>
+              <a href="#" target="_blank" class="btn btn--primary">
+                <i class="fa-brands fa-github"></i> Repositorio
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="img/project_1.png" alt="Captura de Otro Proyecto" class="project-card__image">
+          <div class="project-card__content">
+            <h3 class="project-card__title">Proyecto 2: Otro Proyecto</h3>
+            <p class="project-card__description">
+              Describe aquí tu segundo proyecto. Explica su funcionalidad
+              y qué problema soluciona.
+            </p>
+            <div class="project-card__links">
+              <a href="#" target="_blank" class="btn btn--secondary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+              </a>
+              <a href="#" target="_blank" class="btn btn--primary">
+                <i class="fa-brands fa-github"></i> Repositorio
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container contact-content">
+      <h2 class="section__title">Contacto</h2>
+      <form id="contact-form" class="contact__form">
+        <input type="text" name="name" placeholder="Nombre" required />
+        <input type="email" name="email" placeholder="Correo" required />
+        <textarea name="message" placeholder="Mensaje" required></textarea>
+        <button type="submit" class="btn btn--primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Facundo Román. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
