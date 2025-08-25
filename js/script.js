@@ -90,4 +90,26 @@ document.addEventListener("DOMContentLoaded", () => {
       form.reset();
     });
   }
+
+
+
+
+const navToggle = document.getElementById("nav-toggle");
+const navLinks = document.getElementById("nav-links");
+
+if (navToggle && navLinks) {
+    navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("nav__links--active");
+        navToggle.classList.toggle("nav-toggle--active");
+    });
+
+    // Cerrar el menú al hacer clic en un enlace de navegación
+    document.querySelectorAll('.nav__link').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('nav__links--active');
+            navToggle.classList.remove('nav-toggle--active');
+        });
+    });
+}
+
 });
